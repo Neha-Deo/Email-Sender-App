@@ -52,16 +52,4 @@ class EmailSenderApplicationTests {
 
 	}
 
-	@Test
-	void getInbox() throws IOException {
-		List<Messages> inboxMessages = emailService.getInboxMessages();
-		inboxMessages.forEach(item->{
-			System.out.println(item.getSubject());
-			System.out.println(item.getContent());
-			System.out.println(item.getFiles());
-			System.out.println("-------------------------------------------------");
-		});
-
-	}
-
 }
